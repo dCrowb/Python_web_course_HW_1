@@ -4,7 +4,7 @@ The TablePrinter module provides a utility class for printing tabular data to th
 from abc import ABC, abstractmethod
 
 
-class AbstractViewer(ABC):
+class AbstractTablePrinter(ABC):
     @abstractmethod
     def calculate_column_widths(self):
         pass
@@ -22,7 +22,7 @@ class AbstractViewer(ABC):
         pass
 
 
-class TablePrinter(AbstractPrinter):
+class TablePrinter(AbstractTablePrinter):
     """
     A utility class for printing tabular data to the console.
 

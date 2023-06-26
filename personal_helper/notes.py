@@ -18,7 +18,7 @@ class AbstractViewer(ABC):
         pass
 
 
-class Notes(AbstractPrinter, UserDict):
+class Notes(AbstractViewer, UserDict):
     """..."""
 
     def __init__(self) -> None:
